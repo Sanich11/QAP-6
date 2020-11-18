@@ -1,11 +1,13 @@
-"""
-    С помощью рекурсивной функции развернуть строку.
-"""
+def reverse_str(string):
+   if len(string) <= 1:
+       return string
+   return string[-1] + reverse_str(string[1:-1:]) + string[0]
 
-def rev_str(text):
-    if len(text) == 0:
-        return ''
-    return text[-1] + rev_str(text[:-1])
+print(reverse_str('1234567'))
 
-print(rev_str('123456789'))
-print(rev_str('987654321'))
+# Вариант записи:
+# def reverse_str(string):
+#   return \
+#          string \
+#          if len(string) <= 1 else \
+#          string[-1] + reverse_str(string[1:-1:]) + string[0]
