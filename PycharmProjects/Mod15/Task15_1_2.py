@@ -1,12 +1,7 @@
 """
-Создайте текстовый файл filename.txt с вашей любимой песней
-(вручную, через проводник) и попробуйте вывести содержимое
-целиком и построчно с помощью методов, рассмотренных выше.
+Создайте текстовый файл filename.txt с вашей любимой песней (вручную, через проводник) и попробуйте вывести содержимое целиком и построчно с помощью методов, рассмотренных выше.
 """
 
-
-with open(r'c:\Users\Куличенко\Documents\QAPython\Python\sing.txt', 'rt',
-          encoding='utf8') as f:
-#    print(f.read())
-#    print(f.readline())
-    print(f.readlines(50))
+myfile = open('C:\Users\Sale2\Documents\Саша\Разное\SkillFactory\Mod15\
+               Gruppa krovi.txt', 'rt', encoding = 'utf8')
+myfile.read(50)
